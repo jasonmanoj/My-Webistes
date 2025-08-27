@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — Lisbon Mobile Shop</title>
+  <meta name="description" content="Browse mobile accessories, gadgets, new & used phones, and parts. Add items to your enquiry list and request a quote." />
+  <link rel="canonical" href="https://example.com/products.html" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="assets/js/app.js"></script>
+  <script defer src="assets/js/products.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="container">
+    <section class="page-head">
+      <h1>Products</h1>
+      <p>Browse categories and add items to your enquiry list. We’ll confirm availability and pricing.</p>
+    </section>
+
+    <div class="filters">
+      <input id="searchInput" class="input" type="search" placeholder="Search products..." />
+      <select id="categorySelect" class="input">
+        <option value="All">All Categories</option>
+        <option>Accessories</option>
+        <option>Gadgets</option>
+        <option>Phones-New</option>
+        <option>Phones-Used</option>
+        <option>Parts</option>
+      </select>
+      <select id="sortSelect" class="input">
+        <option value="popularity">Sort: Popular</option>
+        <option value="price-asc">Price: Low → High</option>
+        <option value="price-desc">Price: High → Low</option>
+      </select>
+    </div>
+
+    <section id="productsGrid" class="grid grid--3"></section>
+
+    <aside class="enquiry-dock">
+      <div class="enquiry-summary">
+        <strong>Enquiry List:</strong> <span id="enquiryCount">0</span> items
+      </div>
+      <div class="dock-actions">
+        <a class="btn" href="contact.html">Review & Send →</a>
+      </div>
+    </aside>
+  </main>
+  <footer id="site-footer"></footer>
+</body>
+</html>
